@@ -1,0 +1,1 @@
+SELECT COUNT(chapter) FROM public.sustainability_indicators;

@@ -1,0 +1,10 @@
+INSERT INTO public."core_measures" (
+	"core_measure_description",
+	"best_practices",
+	"created_date",
+	"editor")
+VALUES (
+	'{{insert_form.formData.core_measure_description}}',
+	'{{insert_form.formData.best_practices}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{appsmith.user.email}}');

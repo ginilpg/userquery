@@ -1,0 +1,4 @@
+SELECT CM.core_measure_id, CM.core_measure_description, help.scco_id FROM public.core_measures AS CM
+LEFT JOIN sccoandcmids AS help ON help.core_measure_id = CM.core_measure_id
+WHERE help.scco_id is null
+ORDER BY core_measure_description;

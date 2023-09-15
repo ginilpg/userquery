@@ -1,0 +1,9 @@
+UPDATE public.scoring_coordinates SET
+	editor = '{{appsmith.user.email}}',
+	updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',	
+	mc_id = '{{update_form.formData.mc_id}}',
+	materiality_explanation = '{{update_form.formData.materiality_explanation}}',
+	lcp_id = '{{update_form.formData.lcp_id}}',
+	esg_id = '{{update_form.formData.esg_id}}',
+	core_measure_ids = '{{JSON.stringify(update_form.formData.core_measure_ids)}}'
+WHERE "scco_id" = {{data_table.selectedRow.scco_id}};

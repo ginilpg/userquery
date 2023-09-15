@@ -1,0 +1,2 @@
+SELECT * FROM public."core_measures"
+ORDER BY core_measure_description;

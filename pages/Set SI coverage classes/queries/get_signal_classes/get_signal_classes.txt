@@ -1,0 +1,2 @@
+SELECT * FROM public.signal_classes
+ORDER BY sig_percentage;

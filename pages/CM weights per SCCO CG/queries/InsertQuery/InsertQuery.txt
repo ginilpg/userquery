@@ -1,0 +1,13 @@
+INSERT INTO public.cm_weighting (
+	editor,
+	created_date,
+	updated_date,
+	cm_weight,
+	cmcgsccosub_id
+)
+VALUES (
+	'{{appsmith.user.email}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{Number(cm_weight.value)}}',
+	'{{data_table.selectedRow.cmcgsccosub_id}}');

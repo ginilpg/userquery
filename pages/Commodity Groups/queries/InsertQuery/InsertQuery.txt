@@ -1,0 +1,16 @@
+INSERT INTO public.commodity_groups (
+	cg_name,
+	sub_ids,
+	si_source_ids,
+	cg_comments,
+	created_date,
+	updated_date,
+	editor)	
+VALUES (
+	'{{insert_modal_cg_name.text}}',
+	'{{JSON.stringify(insert_modal_sub_ids.selectedOptionValues)}}',
+	'{{JSON.stringify(insert_modal_si_sources_ids.selectedOptionValues)}}',
+	'{{insert_modal_cg_comments.inputText}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{appsmith.user.email}}');

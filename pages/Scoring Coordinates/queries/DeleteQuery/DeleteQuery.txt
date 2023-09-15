@@ -1,0 +1,2 @@
+DELETE FROM public."scoring_coordinates"
+  WHERE "scco_id" = {{data_table.triggeredRow.scco_id}};

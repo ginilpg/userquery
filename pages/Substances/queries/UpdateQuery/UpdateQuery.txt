@@ -1,0 +1,6 @@
+UPDATE PUBLIC.SUBSTANCES SET
+		sub_name = '{{update_SUB_NAME.inputText}}',
+		sub_infos = '{{update_sub_infos.inputText}}',		
+		updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+		editor = '{{appsmith.user.email}}'
+WHERE sub_id = {{data_table.selectedRow.sub_id}};

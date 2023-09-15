@@ -1,0 +1,14 @@
+INSERT INTO PUBLIC.si_sources (
+	si_source_name,
+	ref_documents,
+	certified_products_overview,
+	created_date,
+	updated_date,
+	editor)
+VALUES (
+	'{{insert_SI_SOURCE_NAME.inputText}}',
+	'{{insert_REF_DOCUMENTS.inputText}}',
+	'{{insert_certified_products_over.inputText}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{appsmith.user.email}}');

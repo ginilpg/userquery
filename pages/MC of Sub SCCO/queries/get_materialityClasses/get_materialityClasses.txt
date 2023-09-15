@@ -1,0 +1,2 @@
+SELECT * FROM materiality_classes
+ORDER BY mc_weight;

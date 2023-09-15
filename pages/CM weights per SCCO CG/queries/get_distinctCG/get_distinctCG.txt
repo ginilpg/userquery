@@ -1,0 +1,1 @@
+SELECT DISTINCT cg_name FROM cm_per_rel_scco_per_cg ORDER BY cg_name;

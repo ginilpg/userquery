@@ -1,0 +1,19 @@
+SELECT 
+	HSPG.cg_id, 
+	HSPG.cg_name, 
+	HSPG.scco_id, 
+	CONCAT(LCP.lcp_acronym, ESG.esg_acronym) AS scco_acronym,
+	CONCAT(LCP.lcp_label, ' -> ', ESG.esg_label) AS scco_label,
+	HSPG.sub_name, 
+	HSPG.mc_id, 
+	HSPG.materialityclass, 
+	HSPG.mc_weight, 
+	HSPG.materiality_explanation, 
+	HSR.relevance_percentage,
+	HSR.relevance_explanation	
+FROM public.hotspots_per_cg AS HSPG
+LEFT JOIN HS_RELEVANCES AS HSR ON HSR.cgsccosub_id = HSPG.cgsccosub_id
+LEFT JOIN LCP AS LCP ON LCP.lcp_id = HSPG.lcp_id
+LEFT JOIN ESG AS ESG ON ESG.esg_id = HSPG.esg_id
+WHERE mc_id != 3 AND cg_id = '{{selectedCG.selectedOptionValue}}'
+ORDER BY cg_id, scco_acronym;

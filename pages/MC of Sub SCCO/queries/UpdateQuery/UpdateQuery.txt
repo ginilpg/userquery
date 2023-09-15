@@ -1,0 +1,7 @@
+UPDATE SUBSTANCES_HOTSPOTS SET 
+	mc_id = '{{Number(UpdateForm.formData.mc_id)}}',
+	materiality_explanation = '{{UpdateForm.formData.materiality_explanation}}',
+	core_measure_ids = '{{JSON.stringify(UpdateForm.formData.core_measure_ids)}}',
+	updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	editor ='{{appsmith.user.email}}'
+WHERE subhs_id = '{{Number(data_table.selectedRow.subhs_id)}}';

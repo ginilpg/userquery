@@ -1,0 +1,1 @@
+SELECT * FROM public.scoring_rules;

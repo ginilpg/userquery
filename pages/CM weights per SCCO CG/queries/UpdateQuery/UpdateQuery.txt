@@ -1,0 +1,5 @@
+UPDATE public.CM_WEIGHTING SET
+	editor = '{{appsmith.user.email}}',
+	updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',	
+	cm_weight = '{{Number(update_cm_weight.value)}}'
+WHERE "cmcgsccosub_id" = {{data_table.selectedRow.cmcgsccosub_id}};

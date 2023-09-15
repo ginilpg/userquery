@@ -1,0 +1,2 @@
+SELECT * FROM substances
+ORDER BY sub_name;

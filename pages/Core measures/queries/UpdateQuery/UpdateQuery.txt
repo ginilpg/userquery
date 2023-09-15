@@ -1,0 +1,6 @@
+UPDATE public."core_measures" SET
+		"core_measure_description" = '{{update_form.fieldState.core_measure_description.isVisible ? update_form.formData.core_measure_description : update_form.sourceData.core_measure_description}}',
+		"best_practices" = '{{update_form.fieldState.best_practices.isVisible ? update_form.formData.best_practices : update_form.sourceData.best_practices}}',
+    "updated_date" = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+		"editor" = '{{appsmith.user.email}}'
+WHERE "core_measure_id" = {{data_table.selectedRow.core_measure_id}};

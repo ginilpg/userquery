@@ -1,0 +1,3 @@
+SELECT cg_name, sub_id, sub_name, scco_id, core_measure_ids FROM subhs_incomplete
+WHERE sub_id is not Null AND (scco_id is Null OR core_measure_ids = '[]')
+ORDER BY cg_name;

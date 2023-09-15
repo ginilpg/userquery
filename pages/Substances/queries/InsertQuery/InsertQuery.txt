@@ -1,0 +1,12 @@
+INSERT INTO PUBLIC.SUBSTANCES (
+	sub_name,
+	sub_infos,
+	created_date,
+	updated_date,
+	editor)
+VALUES (
+	'{{insert_SUB_NAME.inputText}}',
+	'{{insert_sub_infos.inputText}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{appsmith.user.email}}');

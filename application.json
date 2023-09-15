@@ -1,0 +1,100 @@
+{
+  "pages": [
+    {
+      "id": "Scoring Coordinates",
+      "isDefault": true
+    },
+    {
+      "id": "MC of Sub SCCO",
+      "isDefault": false
+    },
+    {
+      "id": "Substances",
+      "isDefault": false
+    },
+    {
+      "id": "Core measures",
+      "isDefault": false
+    },
+    {
+      "id": "Commodity Groups",
+      "isDefault": false
+    },
+    {
+      "id": "SCCO Relevances per CG",
+      "isDefault": false
+    },
+    {
+      "id": "CM weights per SCCO CG",
+      "isDefault": false
+    },
+    {
+      "id": "Overview weightings",
+      "isDefault": false
+    },
+    {
+      "id": "Sustainability Indicators",
+      "isDefault": false
+    },
+    {
+      "id": "SI-Sources",
+      "isDefault": false
+    },
+    {
+      "id": "Set SI coverage classes",
+      "isDefault": false
+    },
+    {
+      "id": "Max Points per CG SI",
+      "isDefault": false
+    },
+    {
+      "id": "Scoring codes",
+      "isDefault": false
+    },
+    {
+      "id": "Sub HS incomplete",
+      "isDefault": false
+    },
+    {
+      "id": "HS weights per CG",
+      "isDefault": false
+    },
+    {
+      "id": "SI signals per CG and CM",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    },
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "side",
+      "navStyle": "sidebar",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "color": "#ECECEC",
+  "icon": "mug",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "isManualUpdate": false,
+  "deleted": false
+}

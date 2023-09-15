@@ -1,0 +1,1 @@
+SELECT DISTINCT cg_name FROM signals_per_cm_per_cg ORDER BY cg_name;

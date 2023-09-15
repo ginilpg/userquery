@@ -1,0 +1,15 @@
+INSERT INTO public.HS_RELEVANCES (
+	editor,
+	created_date,
+	updated_date,
+	relevance_percentage,
+	relevance_explanation,
+	cgsccosub_id
+)
+VALUES (
+	'{{appsmith.user.email}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{Number(relevance_percentage.value)}}',
+	'{{insert_relevance_explanation.text}}',
+	'{{data_table.selectedRow.cgsccosub_id}}');

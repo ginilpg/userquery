@@ -1,0 +1,6 @@
+SELECT BASE.*, SCCO.scco_acronym, CM.core_measure_description, CMW.cm_weight FROM PUBLIC.cm_per_rel_scco_per_cg AS BASE
+LEFT JOIN SCCO AS SCCO ON SCCO.scco_id = BASE.scco_id
+LEFT JOIN CORE_MEASURES AS CM ON CM.core_measure_id = BASE.core_measure_id
+LEFT JOIN cm_weighting AS CMW ON CMW.cmcgsccosub_id = BASE.cmcgsccosub_id
+WHERE cg_name = '{{selectedCG.selectedOptionValue}}'
+ORDER BY SCCO.scco_acronym;

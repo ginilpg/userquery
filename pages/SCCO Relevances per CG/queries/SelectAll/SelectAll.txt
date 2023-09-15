@@ -1,0 +1,5 @@
+SELECT HSPCG.*, SCCO.scco_acronym, SCCO.scco_label, HSR.relevance_percentage, HSR.relevance_explanation FROM PUBLIC.hotspots_per_cg AS HSPCG
+LEFT JOIN SCCO AS SCCO ON SCCO.scco_id = HSPCG.scco_id
+LEFT JOIN HS_RELEVANCES AS HSR ON HSR.cgsccosub_id = HSPCG.cgsccosub_id
+WHERE cg_id = '{{selectedCG.selectedOptionValue}}'
+ORDER BY SCCO.scco_acronym;

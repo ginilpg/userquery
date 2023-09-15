@@ -1,0 +1,10 @@
+UPDATE public.sustainability_indicators SET
+		sustainability_indicator = '{{UpdateForm.formData.sustainability_indicator}}',
+		chapter = '{{UpdateForm.formData.chapter}}',
+		requirements = '{{UpdateForm.formData.requirements}}',
+		cm_ids = '{{JSON.stringify(UpdateForm.formData.cm_ids)}}',
+		sco_field = '{{UpdateForm.formData.sco_field}}',
+		sco_ru = '{{UpdateForm.formData.sco_ru}}',
+    updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+		editor = '{{appsmith.user.email}}'
+WHERE si_id = {{data_table.selectedRow.si_id}};	

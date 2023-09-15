@@ -1,0 +1,1 @@
+SELECT * FROM esg ORDER BY esg_label;

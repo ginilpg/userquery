@@ -1,0 +1,1 @@
+SELECT * FROM CORE_MEASURES ORDER BY core_measure_description;

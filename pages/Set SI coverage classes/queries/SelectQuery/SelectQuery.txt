@@ -1,0 +1,6 @@
+SELECT SOCM.signal_class_id, BASE.cgcmsi_id, BASE.core_measure_description, BASE.best_practices, BASE.sustainability_indicator, SIS.si_source_name, BASE.chapter, BASE.requirements, SC.signal_class  FROM public.signals_per_cm_per_cg AS BASE
+LEFT JOIN si_on_core_measures as SOCM on SOCM.cgcmsi_id = BASE.cgcmsi_id
+LEFT JOIN si_sources as SIS on SIS.si_source_id = BASE.si_source_id
+LEFT JOIN signal_classes as SC on SC.sc_id = SOCM.signal_class_id
+WHERE cg_name = '{{selectedCG.selectedOptionValue}}' AND BASE.core_measure_id = '{{selectedCM_ID.selectedOptionValue}}'
+;

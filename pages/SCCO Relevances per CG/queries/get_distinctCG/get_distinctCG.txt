@@ -1,0 +1,1 @@
+SELECT DISTINCT cg_id, cg_name FROM HOTSPOTS_PER_CG ORDER BY cg_name;

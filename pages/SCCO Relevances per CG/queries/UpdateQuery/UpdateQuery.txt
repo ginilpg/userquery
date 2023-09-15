@@ -1,0 +1,6 @@
+UPDATE public.HS_RELEVANCES SET
+	editor = '{{appsmith.user.email}}',
+	updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',	
+	relevance_percentage = '{{Number(update_relevance_percentage.value)}}',
+	relevance_explanation = '{{update_relevance_explanation.text}}'
+WHERE "cgsccosub_id" = {{data_table.selectedRow.cgsccosub_id}};

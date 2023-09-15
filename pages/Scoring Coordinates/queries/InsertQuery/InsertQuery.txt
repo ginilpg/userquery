@@ -1,0 +1,18 @@
+INSERT INTO public."scoring_coordinates" (
+	"editor",
+	"created_date",
+	"updated_date",
+	"mc_id",
+	"materiality_explanation",
+	"lcp_id",
+	"esg_id",
+	"core_measure_ids")
+VALUES (
+	'{{appsmith.user.email}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{insert_form.formData.mc_id}}',
+	'{{insert_form.formData.materiality_explanation}}',
+	'{{insert_form.formData.lcp_id}}',
+	'{{insert_form.formData.esg_id}}',
+	'{{JSON.stringify(insert_form.formData.core_measure_ids)}}');

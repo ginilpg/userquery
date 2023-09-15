@@ -1,0 +1,8 @@
+UPDATE PUBLIC.COMMODITY_GROUPS SET
+		cg_name = '{{update_modal_cg_name.inputText}}',
+		cg_comments = '{{update_modal_cg_comments.inputText}}',
+		si_source_ids = '{{JSON.stringify(update_modal_si_sources_ids.selectedOptionValues)}}',
+		sub_ids = '{{JSON.stringify(update_modal_sub_ids.selectedOptionValues)}}',
+		updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+		editor = '{{appsmith.user.email}}'
+WHERE cg_id = {{data_table.selectedRow.cg_id}};

@@ -1,0 +1,8 @@
+SELECT 
+BASE.cg_name, 
+BASE.core_measure_description 
+FROM public.signals_per_cm_per_cg AS BASE
+LEFT JOIN si_on_core_measures as SOCM on SOCM.cgcmsi_id = BASE.cgcmsi_id
+WHERE SOCM.signal_class_id is null
+ORDER BY cg_name, core_measure_description
+;

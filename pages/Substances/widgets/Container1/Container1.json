@@ -1,0 +1,81 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "widgetName": "Container1",
+    "borderColor": "#fff",
+    "dynamicPropertyPathList": [{"key": "borderRadius"}],
+    "topRow": 0,
+    "bottomRow": 6,
+    "parentRowSpace": 10,
+    "type": "CONTAINER_WIDGET",
+    "shouldScrollContents": true,
+    "parentColumnSpace": 19.75,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"}
+    ],
+    "children": [{
+        "boxShadow": "none",
+        "widgetName": "Canvas1",
+        "topRow": 0,
+        "bottomRow": 60,
+        "parentRowSpace": 1,
+        "canExtend": false,
+        "type": "CANVAS_WIDGET",
+        "minHeight": 1150,
+        "useAutoLayout": true,
+        "parentColumnSpace": 1,
+        "dynamicTriggerPathList": [],
+        "leftColumn": 0,
+        "dynamicBindingPathList": [],
+        "positioning": "vertical",
+        "labelTextSize": "0.875rem",
+        "rightColumn": 632,
+        "detachFromLayout": true,
+        "widgetId": "59rw5mx0bq",
+        "containerStyle": "none",
+        "isVisible": "true",
+        "version": 1,
+        "parentId": "mvubsemxfo",
+        "isLoading": false,
+        "responsiveBehavior": "fill",
+        "borderRadius": "0px",
+        "flexLayers": [{"children": [
+            {
+                "id": "zyt7jpmx5z",
+                "align": "start"
+            },
+            {
+                "id": "7shprf0l9t",
+                "align": "end"
+            },
+            {
+                "id": "kby34l9nbb",
+                "align": "end"
+            },
+            {
+                "id": "2jj0197tff",
+                "align": "end"
+            }
+        ]}]
+    }],
+    "borderWidth": "0",
+    "flexVerticalAlignment": "start",
+    "labelTextSize": "0.875rem",
+    "backgroundColor": "#FFFFFF",
+    "rightColumn": 64,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "mvubsemxfo",
+    "containerStyle": "card",
+    "minWidth": 450,
+    "isVisible": "true",
+    "version": 1,
+    "parentId": "0",
+    "isLoading": false,
+    "responsiveBehavior": "fill",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "maxDynamicHeight": 9000,
+    "alignment": "start",
+    "minDynamicHeight": 4
+}

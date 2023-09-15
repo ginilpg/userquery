@@ -1,0 +1,4 @@
+SELECT DISTINCT BASE.core_measure_id, cm.core_measure_description FROM signals_per_cm_per_cg as BASE
+LEFT JOIN core_measures as cm on cm.core_measure_id = BASE.core_measure_id
+WHERE cg_name = '{{selectedCG.selectedOptionValue}}'
+ORDER BY cm.core_measure_description;

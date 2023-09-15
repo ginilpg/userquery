@@ -1,0 +1,3 @@
+SELECT DISTINCT BASE.scco_id, SCCO.scco_label, SCCO.scco_acronym FROM cm_per_rel_scco_per_cg AS BASE
+LEFT JOIN SCCO AS SCCO ON SCCO.scco_id = BASE.scco_id
+ORDER BY scco.scco_acronym;

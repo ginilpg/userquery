@@ -1,0 +1,7 @@
+UPDATE PUBLIC.si_sources SET
+		si_source_name = '{{update_SI_SOURCE_NAME.inputText}}',
+		ref_documents = '{{update_REF_DOCUMENTS.inputText}}',
+		certified_products_overview = '{{update_certified_products_over.inputText}}',
+		updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+		editor = '{{appsmith.user.email}}'
+WHERE si_source_id = {{data_table.selectedRow.si_source_id}};

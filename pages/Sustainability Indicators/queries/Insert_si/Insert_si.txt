@@ -1,0 +1,14 @@
+INSERT INTO sustainability_indicators
+  (sustainability_indicator, si_source_id, chapter,	requirements, cm_ids, sco_field, sco_ru, created_date, editor)
+VALUES
+  (
+		'{{Insert_sustainability_indi.formData.sustainability_indicator}}',
+    '{{Insert_sustainability_indi.formData.spi_id}}',
+    '{{Insert_sustainability_indi.formData.chapter}}',
+    '{{Insert_sustainability_indi.formData.requirements}}',
+		'{{JSON.stringify(Insert_sustainability_indi.formData.cm_ids)}}',
+		'{{Insert_sustainability_indi.formData.sco_field}}',
+		'{{Insert_sustainability_indi.formData.sco_ru}}',
+		'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+		'{{appsmith.user.email}}'
+  );

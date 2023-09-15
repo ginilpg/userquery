@@ -1,0 +1,2 @@
+SELECT * FROM public.si_sources
+ORDER BY si_source_name;

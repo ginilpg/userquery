@@ -1,0 +1,13 @@
+INSERT INTO public.SI_ON_CORE_MEASURES (
+	editor,
+	created_date,
+	updated_date,
+	signal_class_id,
+	cgcmsi_id
+)
+VALUES (
+	'{{appsmith.user.email}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{Number(insert_signal_class.selectedOptionValue)}}',
+	'{{data_table.selectedRow.cgcmsi_id}}');

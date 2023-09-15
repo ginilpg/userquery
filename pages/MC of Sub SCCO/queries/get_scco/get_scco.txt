@@ -1,0 +1,7 @@
+SELECT 
+	SCCO.scco_id, 
+	CONCAT(LCP.lcp_label, ' ->', ESG.esg_label) AS scco_label 
+FROM Scoring_coordinates AS SCCO
+LEFT JOIN LCP ON LCP.lcp_id = SCCO.lcp_id
+LEFT JOIN ESG ON ESG.esg_id = SCCO.esg_id 
+ORDER BY scco_label;

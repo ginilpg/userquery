@@ -1,0 +1,2 @@
+SELECT * FROM PUBLIC.SCORING_CODE
+WHERE cg_name = '{{selectedCG.selectedOptionLabel}}';

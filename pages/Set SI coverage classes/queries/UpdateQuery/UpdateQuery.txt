@@ -1,0 +1,5 @@
+UPDATE public.SI_ON_CORE_MEASURES SET
+	editor = '{{appsmith.user.email}}',
+	updated_date = '{{moment.utc().format("YYYY-MM-DD HH:mm")}}',	
+	signal_class_id = '{{Number(update_signal_class.selectedOptionValue)}}'
+WHERE "cgcmsi_id" = {{data_table.selectedRow.cgcmsi_id}};

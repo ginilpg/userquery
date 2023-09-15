@@ -1,0 +1,17 @@
+INSERT INTO PUBLIC.SUBSTANCES_HOTSPOTS ( 
+	sub_id,
+	scco_id,
+	mc_id,
+	materiality_explanation,
+	core_measure_ids,
+	created_date,
+	editor)
+VALUES (
+	'{{Number(InsertForm.formData.sub_id)}}',
+	'{{(InsertForm.formData.scco_id)}}',
+	'{{Number(InsertForm.formData.mc_id)}}',
+	'{{InsertForm.formData.materiality_explanation}}',
+	'{{JSON.stringify(InsertForm.formData.core_measure_ids)}}',
+	'{{moment.utc().format("YYYY-MM-DD HH:mm")}}',
+	'{{appsmith.user.email}}')
+;

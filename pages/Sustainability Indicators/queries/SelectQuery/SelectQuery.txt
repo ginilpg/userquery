@@ -1,0 +1,4 @@
+select SI.*, SIS.SI_SOURCE_NAME, SCORU.SCORU_DESCR from public.sustainability_indicators AS SI 
+INNER JOIN public.si_sources AS SIS ON SI.SI_SOURCE_ID = SIS.SI_SOURCE_ID
+LEFT JOIN PUBLIC.SCORING_RULES AS SCORU ON SI.SCO_RU = SCORU.SCORU_ID
+ORDER BY si_source_name, chapter;

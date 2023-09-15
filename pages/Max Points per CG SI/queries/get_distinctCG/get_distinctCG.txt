@@ -1,0 +1,2 @@
+SELECT DISTINCT cg_id, cg_name FROM public.max_points_per_sustainability_indicator
+ORDER BY cg_name;

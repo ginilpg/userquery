@@ -1,0 +1,4 @@
+SELECT DISTINCT BASE.scco_id, SCCO.scco_label, SCCO.scco_acronym FROM HOTSPOTS_PER_CG AS BASE
+LEFT JOIN SCCO AS SCCO ON SCCO.scco_id = BASE.scco_id
+WHERE cg_id = '{{selectedCG.selectedOptionValue}}'
+ORDER BY scco.scco_acronym;
