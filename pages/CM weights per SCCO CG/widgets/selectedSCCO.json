@@ -27,6 +27,7 @@
     "alignment": "start",
     "widgetName": "selectedSCCO",
     "isFilterable": true,
+    "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 24.799999999999994,

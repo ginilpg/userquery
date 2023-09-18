@@ -27,6 +27,7 @@
     "alignment": "start",
     "widgetName": "selectedCG",
     "isFilterable": true,
+    "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 17,

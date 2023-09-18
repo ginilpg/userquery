@@ -9,7 +9,7 @@
     "type": "ICON_BUTTON_WIDGET",
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 62.99212598425197,
+    "leftColumn": 63.675386444708664,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}
@@ -17,7 +17,7 @@
     "isDisabled": false,
     "flexVerticalAlignment": "end",
     "labelTextSize": "0.875rem",
-    "rightColumn": 64,
+    "rightColumn": 66.7193816884661,
     "iconName": "refresh",
     "widgetId": "2jj0197tff",
     "minWidth": 50,
